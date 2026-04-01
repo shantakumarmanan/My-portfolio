@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Shanta Kumar Manan, Full Stack Developer and CSE Student.">
+    <title>Shanta Kumar Manan | Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Background glow effects -->
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <header class="glass-nav">
+        <nav class="container nav-wrapper">
+            <a href="#" class="logo"></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Journey</a></li>
+                <li><a href="#github">GitHub</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="ph ph-list"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section container fade-in">
+            <!-- Floating Background Shapes -->
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            <div class="hero-shape shape-3"></div>
+            
+            <div class="hero-content">
+                <div class="greeting-badge">
+                    <i class="ph-fill ph-sparkle"></i> Hi, I'm
+                </div>
+                <h1 class="name">Shanta Kumar Manan</h1>
+                <h2 class="headline">
+                    <span class="typing-text gradient-text"></span><span class="typing-cursor">&nbsp;</span>
+                </h2>
+                <p class="intro">
+                    Passionate about building scalable applications and solving complex problems with efficient data structures and algorithms.
+                </p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">
+                        View Projects <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="profile.jpeg" alt="Shanta Kumar Manan" class="profile-pic">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section container py-section">
+            <h2 class="section-title fade-in">About <span class="gradient-text">Me</span></h2>
+            <div class="about-content glass-panel fade-in">
+                <div class="about-text">
+                    <p>I am a B.Tech Computer Science Engineering student at <strong>Lovely Professional University</strong>, actively focused on Full Stack Development.</p>
+                    <p>With a robust problem-solving mindset forged through intensive DSA practice, I aim to create scalable, efficient software systems. I believe in elegant code and continuously challenge myself to learn the latest technologies.</p>
+                </div>
+                <div class="about-actions">
+                    <a href="resume.pdf" class="btn btn-resume" download="resume.pdf">
+                        Download Resume <i class="ph-bold ph-download-simple"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- What I Do Section -->
+        <section id="services" class="services-section container py-section">
+            <h2 class="section-title fade-in">What I <span class="gradient-text">Do</span></h2>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card glass-panel fade-in skill-hover">
+                    <i class="ph-fill ph-browsers service-icon"></i>
+                    <h3>Frontend Development</h3>
+                    <p>Building responsive, interactive, and accessible UI components with React, HTML, CSS, and modern frameworks.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card glass-panel fade-in skill-hover delay-1">
+                    <i class="ph-fill ph-hard-drives service-icon"></i>
+                    <h3>Backend Architecture</h3>
+                    <p>Designing scalable RESTful APIs and server logic using Node.js, Express, and efficient algorithms in C++ & Java.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card glass-panel fade-in skill-hover delay-2">
+                    <i class="ph-fill ph-database service-icon"></i>
+                    <h3>Database Management</h3>
+                    <p>Creating robust data schemas, writing complex queries, and managing data via SQL/NoSQL databases like MySQL and MongoDB.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section container py-section">
+            <h2 class="section-title fade-in">Tech <span class="gradient-text">Stack</span></h2>
+            <div class="skills-grid">
+                <!-- Languages -->
+                <div class="skill-category glass-panel fade-in skill-hover">
+                    <div class="skill-head">
+                        <i class="ph-fill ph-code"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <!-- Frameworks/Libraries -->
+                <div class="skill-category glass-panel fade-in skill-hover delay-1">
+                    <div class="skill-head">
+                        <i class="ph-fill ph-atom"></i>
+                        <h3>Frameworks & Libraries</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+                <!-- Tools -->
+                <div class="skill-category glass-panel fade-in skill-hover delay-2">
+                    <div class="skill-head">
+                        <i class="ph-fill ph-wrench"></i>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section container py-section">
+            <h2 class="section-title fade-in">Featured <span class="gradient-text">Projects</span></h2>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-panel fade-in">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="ph-fill ph-bus"></i></div>
+                        <div class="project-links">
+                            <a href="#" aria-label="GitHub"><i class="ph-bold ph-github-logo"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Bus Reservation & Booking System</h3>
+                        <p>A terminal-based system for managing bus bookings using modular C++ and OOPs. Features file handling for persistent data and efficient search/seat-allocation via DSA.</p>
+                        <div class="tech-stack-list">
+                            <span>C++</span>
+                            <span>OOPs</span>
+                            <span>DSA</span>
+                            <span>File Handling</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card glass-panel fade-in delay-1">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="ph-fill ph-crosshair"></i></div>
+                        <div class="project-links">
+                            <a href="#" aria-label="Live Demo"><i class="ph-bold ph-link"></i></a>
+                            <a href="#" aria-label="GitHub"><i class="ph-bold ph-github-logo"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Ballistics Recognition Tool</h3>
+                        <p>Web tool integrated with PHP backend logic to process ballistic data and deliver accurate, real-time identification results with an intuitive, responsive UI.</p>
+                        <div class="tech-stack-list">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications -->
+        <section id="education" class="edu-section container py-section">
+            <h2 class="section-title fade-in">Journey & <span class="gradient-text">Achievements</span></h2>
+            <div class="bento-grid">
+                <!-- Education -->
+                <div class="bento-item glass-panel fade-in bento-tall">
+                    <div class="bento-header">
+                        <i class="ph-fill ph-graduation-cap"></i>
+                        <h3>Education</h3>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h4>B.Tech in Computer Science and Engineering</h4>
+                            <p class="institution">Lovely Professional University</p>
+                            <p class="timeline-meta">Aug '23 – Present • CGPA: 6.5</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h4>Intermediate (PCM)</h4>
+                            <p class="institution">Vashist Public School</p>
+                            <p class="timeline-meta">Mar '22 – May '23 • 71.4%</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h4>Matriculation</h4>
+                            <p class="institution">Vashist Public School</p>
+                            <p class="timeline-meta">Mar '20 – May '21 • 87.8%</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Training -->
+                <div class="bento-item glass-panel fade-in bento-wide delay-1">
+                    <div class="bento-header">
+                        <i class="ph-fill ph-certificate"></i>
+                        <h3>Certifications</h3>
+                    </div>
+                    <ul class="custom-list">
+                        <li>
+                            <i class="ph-bold ph-check-circle"></i>
+                            <div>
+                                <a href="certificates/chatgpt-essentials.pdf" target="_blank" class="cert-link" title="View Certificate"><strong>ChatGPT Made Easy - AI Essentials</strong></a>
+                                <span>Udemy • Aug '25</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="ph-bold ph-check-circle"></i>
+                            <div>
+                                <a href="certificates/c-programming.pdf" target="_blank" class="cert-link" title="View Certificate"><strong>C Programming - Master the C Language</strong></a>
+                                <span>Udemy • Jul '25</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="ph-bold ph-check-circle"></i>
+                            <div>
+                                <a href="certificates/responsive-web-design.pdf" target="_blank" class="cert-link" title="View Certificate"><strong>Responsive Web Design (HTML & CSS)</strong></a>
+                                <span>FreeCodeCamp • Apr '23</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="ph-bold ph-check-circle"></i>
+                            <div>
+                                <a href="certificates/cloud-computing.pdf" target="_blank" class="cert-link" title="View Certificate"><strong>Cloud Computing Certification</strong></a>
+                                <span>NPTEL • Apr '25</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="ph-bold ph-spinner"></i>
+                            <div>
+                                <strong>Salesforce - CRM, coding with Apex</strong>
+                                <span>In Progress (Awaited) • Feb '26</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Achievements -->
+                <div class="bento-item glass-panel fade-in delay-2">
+                    <div class="bento-header">
+                        <i class="ph-fill ph-trophy"></i>
+                        <h3>Achievements & Training</h3>
+                    </div>
+                    <ul class="custom-list simple-list" style="font-size: 0.9rem; gap: 0.8rem;">
+                        <li><strong>DSA Training:</strong> 40-day intensive program on core data structures and problem-solving.</li>
+                        <li><strong>GFG 160 Days Challenge:</strong> Consistently solved daily DSA problems.</li>
+                        <li><strong>PMP Time Management:</strong> Course completion certificate from Infosys Springboard.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Stats Section -->
+        <section id="github" class="github-section container py-section">
+            <h2 class="section-title fade-in">GitHub <span class="gradient-text">Activity</span></h2>
+            <div class="github-wrapper glass-panel fade-in text-center">
+                <div class="github-stats-container">
+                    <img src="https://github-readme-stats.vercel.app/api?username=shantakumarmanan&show_icons=true&theme=radical&hide_border=true&bg_color=0a0a0f&title_color=14b8a6&text_color=94a3b8&icon_color=3b82f6" alt="GitHub Stats" class="github-stats-img">
+                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=shantakumarmanan&theme=radical&hide_border=true&background=0a0a0f00&ring=14b8a6&fire=14b8a6&currStreakLabel=14b8a6" alt="GitHub Streak" class="github-stats-img">
+                </div>
+                <div class="github-calendar-container mt-4">
+                    <h3 style="margin-bottom: 1.5rem; font-size: 1.4rem;">Contribution Graph</h3>
+                    <img src="https://ghchart.rshah.org/14b8a6/shantakumarmanan" alt="Shanta Kumar Manan's Github Chart" class="github-chart">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section container py-section">
+            <h2 class="section-title fade-in">Get In <span class="gradient-text">Touch</span></h2>
+            <div class="contact-wrapper">
+                <div class="contact-info glass-panel fade-in">
+                    <h3>Contact Information</h3>
+                    <p>I'm actively looking for opportunities where I can contribute and grow. Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="ph-fill ph-phone"></i> +91 8278765917
+                        </div>
+                        <div class="contact-item">
+                            <i class="ph-fill ph-envelope-simple"></i> vsshanta2225@gmail.com
+                        </div>
+                    </div>
+                    <div class="social-links-lg">
+                        <a href="https://github.com/shantakumarmanan" target="_blank" aria-label="GitHub"><i class="ph-fill ph-github-logo"></i> GitHub</a>
+                        <a href="https://linkedin.com/in/shantamanan77/" target="_blank" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i> LinkedIn</a>
+                    </div>
+                </div>
+                <form class="contact-form glass-panel fade-in delay-1" id="contactForm">
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required placeholder="John Doe">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" required placeholder="Your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <span>Send Message</span> <i class="ph-bold ph-paper-plane-right"></i>
+                    </button>
+                    <p id="form-message" class="form-message"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Shanta Kumar Manan. Built with passion.</p>
+            <div class="footer-links">
+                <a href="https://github.com/shantakumarmanan" target="_blank" aria-label="GitHub"><i class="ph-fill ph-github-logo"></i></a>
+                <a href="https://linkedin.com/in/shantamanan77/" target="_blank" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
