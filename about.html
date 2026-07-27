@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cyan">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Shanta Kumar Manan - Biography, background, algorithm philosophy, and engineering journey.">
+    <title>About Me | Shanta Kumar Manan</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <!-- Navigation Bar -->
+    <header class="glass-nav">
+        <nav class="container nav-wrapper">
+            <a href="index.html" class="logo">
+                <div class="logo-badge">M</div>
+                <span>Manan<span style="color: var(--acc-primary);">.</span></span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active-link">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#journey">Journey</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="theme-switcher">
+                <div class="theme-dot theme-cyan active" data-set-theme="cyan" title="Cyber Cyan"></div>
+                <div class="theme-dot theme-magenta" data-set-theme="magenta" title="Neon Magenta"></div>
+                <div class="theme-dot theme-purple" data-set-theme="purple" title="Electric Purple"></div>
+                <div class="theme-dot theme-emerald" data-set-theme="emerald" title="Emerald Energy"></div>
+                <div class="theme-dot theme-gold" data-set-theme="gold" title="Sunburst Gold"></div>
+            </div>
+
+            <div class="hamburger">
+                <i class="ph ph-list"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Subpage Header -->
+        <section class="subpage-hero fade-in">
+            <span class="section-subtitle">Biography & Mindset</span>
+            <h1 class="section-title">The Engineering Story Behind <span class="gradient-text">Manan</span></h1>
+        </section>
+
+        <!-- Detailed Bio Passage -->
+        <section class="py-section fade-in" style="padding-top: 20px;">
+            <div class="glass-panel" style="line-height: 1.9; font-size: 1.1rem; color: var(--text-muted);">
+                <div style="display: flex; gap: 2.5rem; flex-wrap: wrap; align-items: center; margin-bottom: 2.5rem;">
+                    <img src="profile.jpeg" alt="Shanta Kumar Manan" style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 3px solid var(--acc-primary); box-shadow: 0 0 25px var(--acc-glow);">
+                    <div style="flex: 1; min-width: 280px;">
+                        <h2 style="font-size: 1.8rem; color: var(--text-bright); margin-bottom: 0.8rem;">Hello! I'm Shanta Kumar Manan</h2>
+                        <p style="margin-bottom: 1rem;">
+                            A passionate Computer Science Engineering undergraduate studying at <strong>Lovely Professional University (LPU)</strong>. My technical journey began with fundamental curiosity about how software systems process data under the hood. Over the years, that curiosity transformed into a rigorous dedication to low-level algorithmic logic and full-stack software architecture.
+                        </p>
+                        <div style="display: flex; gap: 0.8rem; flex-wrap: wrap;">
+                            <span class="badge badge-cyan"><i class="ph-fill ph-check-circle"></i> CSE Student</span>
+                            <span class="badge badge-magenta"><i class="ph-fill ph-check-circle"></i> DSA Practitioner</span>
+                            <span class="badge badge-gold"><i class="ph-fill ph-check-circle"></i> Full Stack Builder</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr style="border: 0; border-top: 1px solid var(--glass-border); margin: 2rem 0;">
+
+                <h3 style="color: var(--text-bright); font-size: 1.5rem; margin-bottom: 1rem;"><i class="ph-bold ph-brain" style="color: var(--acc-primary);"></i> Core Engineering Philosophy</h3>
+                <p style="margin-bottom: 1.5rem;">
+                    I firmly believe that great software is defined by the intersection of algorithmic efficiency and exceptional user experience. Writing code isn't just about making something work—it's about designing clean, reusable abstractions, minimizing time complexity, and ensuring maintainability as systems scale.
+                </p>
+                <p style="margin-bottom: 1.5rem;">
+                    Whether I am writing C++ routines to manage memory and file structures or crafting dynamic user interfaces in React, I maintain an obsessive focus on performance metrics, edge-case safety, and code readability.
+                </p>
+
+                <hr style="border: 0; border-top: 1px solid var(--glass-border); margin: 2rem 0;">
+
+                <h3 style="color: var(--text-bright); font-size: 1.5rem; margin-bottom: 1rem;"><i class="ph-bold ph-path" style="color: var(--acc-pink);"></i> Problem Solving & Daily Practice</h3>
+                <p style="margin-bottom: 1.5rem;">
+                    Problem solving is the heartbeat of my daily developer routine. Through intensive participation in the <strong>40-Day DSA Intensive Training</strong> and the <strong>GFG 160 Days Daily Coding Challenge</strong>, I have solved over 500 algorithms across topics including Graph Traversals (BFS/DFS), Dynamic Programming, Binary Search Trees, Matrix Operations, and Sorting algorithms.
+                </p>
+
+                <div class="stats-grid" style="margin: 2.5rem 0;">
+                    <div class="stat-card">
+                        <div class="stat-number" style="font-size: 2rem; color: var(--acc-primary);">500+</div>
+                        <div class="stat-label">Algorithmic Challenges</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" style="font-size: 2rem; color: var(--acc-pink);">100%</div>
+                        <div class="stat-label">Dedication to Learning</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" style="font-size: 2rem; color: var(--acc-gold);">6.5</div>
+                        <div class="stat-label">LPU Academic CGPA</div>
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top: 2rem;">
+                    <a href="resume.pdf" download="resume.pdf" class="btn btn-primary">Download Official Resume <i class="ph-bold ph-download-simple"></i></a>
+                    <a href="contact.html" class="btn btn-outline">Contact Me Directly <i class="ph-bold ph-envelope"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Shanta Kumar Manan. Built with passion & vibrant engineering.</p>
+            <div class="footer-links">
+                <a href="https://github.com/shantakumarmanan" target="_blank" aria-label="GitHub"><i class="ph-fill ph-github-logo"></i></a>
+                <a href="https://linkedin.com/in/shantamanan77/" target="_blank" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

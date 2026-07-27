@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cyan">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Shanta Kumar Manan - Phone, Email, Social Links, and Message Builder.">
+    <title>Contact Portal | Shanta Kumar Manan</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <!-- Navigation Bar -->
+    <header class="glass-nav">
+        <nav class="container nav-wrapper">
+            <a href="index.html" class="logo">
+                <div class="logo-badge">M</div>
+                <span>Manan<span style="color: var(--acc-primary);">.</span></span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#journey">Journey</a></li>
+                <li><a href="contact.html" class="active-link">Contact</a></li>
+            </ul>
+
+            <div class="theme-switcher">
+                <div class="theme-dot theme-cyan active" data-set-theme="cyan" title="Cyber Cyan"></div>
+                <div class="theme-dot theme-magenta" data-set-theme="magenta" title="Neon Magenta"></div>
+                <div class="theme-dot theme-purple" data-set-theme="purple" title="Electric Purple"></div>
+                <div class="theme-dot theme-emerald" data-set-theme="emerald" title="Emerald Energy"></div>
+                <div class="theme-dot theme-gold" data-set-theme="gold" title="Sunburst Gold"></div>
+            </div>
+
+            <div class="hamburger">
+                <i class="ph ph-list"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="subpage-hero fade-in">
+            <span class="section-subtitle">Communication Channel</span>
+            <h1 class="section-title">Get In Touch & <span class="gradient-text">Collaborate</span></h1>
+        </section>
+
+        <section class="py-section fade-in" style="padding-top: 10px;">
+            <div class="contact-grid">
+                <div class="glass-panel contact-info">
+                    <h3>Contact Information</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 2rem;">I am open to software engineering internships, technical collaborations, and software projects. Drop a message or reach out via direct channels!</p>
+                    
+                    <div class="contact-info-list">
+                        <div class="contact-item-box">
+                            <div class="contact-icon-circle"><i class="ph-fill ph-phone"></i></div>
+                            <div>
+                                <div class="contact-item-title">Phone Number</div>
+                                <div class="contact-item-val">+91 8278765917</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-box">
+                            <div class="contact-icon-circle" style="color: var(--acc-pink); border-color: rgba(255,0,127,0.3); background: rgba(255,0,127,0.1);"><i class="ph-fill ph-envelope-simple"></i></div>
+                            <div>
+                                <div class="contact-item-title">Email Address</div>
+                                <div class="contact-item-val">vsshanta2225@gmail.com</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-box">
+                            <div class="contact-icon-circle" style="color: var(--acc-gold); border-color: rgba(255,183,3,0.3); background: rgba(255,183,3,0.1);"><i class="ph-fill ph-map-pin"></i></div>
+                            <div>
+                                <div class="contact-item-title">Location</div>
+                                <div class="contact-item-val">Lovely Professional University, Phagwara, Punjab</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-bar">
+                        <a href="https://github.com/shantakumarmanan" target="_blank" class="social-btn"><i class="ph-fill ph-github-logo"></i> GitHub Profile</a>
+                        <a href="https://linkedin.com/in/shantamanan77/" target="_blank" class="social-btn"><i class="ph-fill ph-linkedin-logo"></i> LinkedIn Profile</a>
+                    </div>
+                </div>
+
+                <form class="glass-panel contact-form" id="contactForm">
+                    <div class="input-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" required placeholder="John Doe">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Your Email Address</label>
+                        <input type="email" id="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Message Content</label>
+                        <textarea id="message" rows="5" required placeholder="Write your project details or inquiry here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        Send Message <i class="ph-bold ph-paper-plane-right"></i>
+                    </button>
+                    <p id="form-message" style="margin-top: 0.5rem; font-weight: 600;"></p>
+                </form>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-section fade-in" style="padding-top: 0;">
+            <div class="section-header">
+                <span class="section-subtitle">Quick Answers</span>
+                <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+            </div>
+
+            <div class="accordion-wrapper">
+                <div class="accordion-item active">
+                    <div class="accordion-header">
+                        <h3>What is your response time for direct emails?</h3>
+                        <i class="ph-bold ph-caret-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        I usually respond to emails within 24 hours. For urgent technical inquiries, feel free to connect via LinkedIn or direct phone call.
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Where are you currently located?</h3>
+                        <i class="ph-bold ph-caret-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        I am currently based at Lovely Professional University in Punjab, India, and open to remote work as well as relocation for software engineering roles.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Shanta Kumar Manan. Built with passion & vibrant engineering.</p>
+            <div class="footer-links">
+                <a href="https://github.com/shantakumarmanan" target="_blank" aria-label="GitHub"><i class="ph-fill ph-github-logo"></i></a>
+                <a href="https://linkedin.com/in/shantamanan77/" target="_blank" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
